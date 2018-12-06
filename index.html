@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Task-list</title>
+	<script type="text/javascript">
+		function addfunc(inputValue) {
+			if (inputValue === undefined) {
+				inputValue = {str: inputString, checked: false};
+			}
+			var p = document.createElement('p')
+			var newtask = document.createElement('input')
+			var label = document.createElement('label')
+			newtask.type = "checkbox";
+			// newtask.value = document.getElementById('new').value; 
+			label.for = "document.getElementById('new').value";
+			label 
+			// сверху сделать чегото чтобы получать то что ввели в форму.
+			p.appendChild(newtask);
+			form.appendChild(p);
+			p.appendChild(label);
+
+
+
+		}
+
+		function deletefunc() {
+			var tasks;
+			var checked;
+			for (var i = 0; i < Things.length; i++) {
+				Things[i]
+			}
+		}
+
+		function donefunc() {
+			
+
+
+
+		}
+
+		function notdonefunc() {
+			
+
+
+		}
+	</script>
+</head>
+<body>
+	<article>
+		<form id="form">
+			<p>What do you want to do?</p>
+			<p><input type="text" name="new-task" id="new" value=""></p>
+			<p><input type="button" value="addButton" onclick="addfunc()"></p>
+			<button name="deleteButton">Delete</button>
+			<button name="doneButton">Done</button>
+			<button name="notdoneButton">Not done</button>
+		</form>
+	</article>
+</body>
+</html>
